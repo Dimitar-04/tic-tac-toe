@@ -1,0 +1,45 @@
+.board-container{
+    /* width: 200px;
+    height: 200px; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(3,1fr); */
+    gap: 5px;
+    text-align: center;
+}
+.row{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.cell{
+    width: 40px;
+    height: 40px;
+    background-color: lightgrey;
+    font-size: 16px;
+
+}
+button:disabled{
+    border: 1px solid black;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.hit{
+    background-color: darkgreen;
+}
+.Start,
+.new-game{
+    padding: 5px;
+    border-radius: 4px;
+}
+ .Start:disabled{
+    background-color: red;
+ }
